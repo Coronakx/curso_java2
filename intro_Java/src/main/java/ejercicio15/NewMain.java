@@ -17,9 +17,17 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Scanner leer = new Scanner(System.in);
         int num1, num2, opcion, res;
         
         do {
+            
+        
+        System.out.println("Ingresa el primer número");
+        num1 = leer.nextInt();
+        System.out.println("Ingresa el segundo número");
+        num2 = leer.nextInt();
         
         System.out.println("MENÚ");
         System.out.println("1.SUMAR");
@@ -32,26 +40,29 @@ public class NewMain {
         System.out.println("Ingresa una opción");
         opcion = leer.nextInt();
     
-        System.out.println("Ingresa el primer número");
-        Scanner leer = new Scanner(System.in);
-        num1 = leer.nextInt();
-        System.out.println("Ingresa el segundo número");
-        num2 = leer.nextInt();
                
  
         
         switch(opcion){
         
-        case (1): res=num1+num2;
-            System.out.println("SUMA "+res);
+        case 1: 
+                res=num1+num2;
+                System.out.println("La SUMA es igual a: "+res);
         break;
-        case (2):System.out.println("RESTAR");
+        case 2:
+                res=num1-num2;
+                System.out.println("La RESTA es igual a: " +res);
         break;
-        case 3: System.out.println("MULTIPLICAR");
+        case 3:
+                res=num1*num2;
+               System.out.println("La MULTIPLICACIÓN es igual a: " +res);
         break;
-        case 4: System.out.println("DIVIDIR");
+        case 4:
+                res=num1*num2;
+                System.out.println("La DIVISIÓN es igual a: " +res);
         break;
-        case 5:System.out.println("SALIR ¿Está seguro que desea salir?");
+        case 5:
+                System.out.println("SALIR");
         break;
         default: System.out.println("Opción INVÁLIDA");
         }
