@@ -36,11 +36,9 @@ public class NewMain {
         System.out.println("4.DIVIDIR");
         System.out.println("5.SALIR");
         
-        
+        try{
         System.out.println("Ingresa una opción");
         opcion = leer.nextInt();
-    
-               
  
         
         switch(opcion){
