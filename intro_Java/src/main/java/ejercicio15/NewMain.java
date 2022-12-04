@@ -56,6 +56,13 @@ public class NewMain {
         default: System.out.println("Opción INVÁLIDA");
         }
             
+        //Para validar que la opción elegida sea un número. Debe ir dentro del do después del switch 
+        //la llave del catch cierra a la de try
+        }catch (InputMismatchException e) {
+        System.out.println("La opción debe ser un número");
+        //sn.next es para que no se cicle si el usuario digita algo distinto a número
+        sn.next();
+            
         while (opcion=5);
             }
        
