@@ -19,12 +19,7 @@ public class NewMain {
         // TODO code application logic here
         int num1, num2, opcion, res;
         
-        System.out.println("Captura dos números para realizar operaciones matemáticas");
-        System.out.println("Ingresa el primer número");
-        Scanner leer = new Scanner(System.in);
-        num1 = leer.nextInt();
-        System.out.println("Ingresa el segundo número");
-        num2 = leer.nextInt();
+        do {
         
         System.out.println("MENÚ");
         System.out.println("1.SUMAR");
@@ -36,8 +31,12 @@ public class NewMain {
         
         System.out.println("Ingresa una opción");
         opcion = leer.nextInt();
-        if (opcion>5){
-            System.out.println("Opción Inválida");
+    
+        System.out.println("Ingresa el primer número");
+        Scanner leer = new Scanner(System.in);
+        num1 = leer.nextInt();
+        System.out.println("Ingresa el segundo número");
+        num2 = leer.nextInt();
                
  
         
@@ -53,11 +52,12 @@ public class NewMain {
         case 4: System.out.println("DIVIDIR");
         break;
         case 5:System.out.println("SALIR ¿Está seguro que desea salir?");
-     
         break;
-        default: System.out.println("Tipo INVÁLIDO");
+        default: System.out.println("Opción INVÁLIDA");
         }
-        
-    }
+            
+        while (opcion=5);
+            }
+       
     
 }
