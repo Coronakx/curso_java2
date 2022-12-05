@@ -63,7 +63,7 @@ public class NewMain {
         case 5:
                 System.out.println("¿Está seguro que desea salir? S/N");
                 confirmar=leer.nextChar();
-                if (confirmar.equals("S")) {
+                if (confirmar.equalsIgnoreCase("S")) {
                     salir=true;                 
                 break;
                 default: System.out.println("Opción INVÁLIDA");
