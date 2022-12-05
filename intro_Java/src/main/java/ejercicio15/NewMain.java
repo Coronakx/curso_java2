@@ -20,8 +20,9 @@ public class NewMain {
         
         Scanner leer = new Scanner(System.in);
         int num1, num2, opcion, res;
+        boolean salir=false;
         
-        do {
+        while (!salir) {
             
         
         System.out.println("Ingresa el primer número");
@@ -60,9 +61,12 @@ public class NewMain {
                 System.out.println("La DIVISIÓN es igual a: " +res);
         break;
         case 5:
-                System.out.println("SALIR");
-        break;
-        default: System.out.println("Opción INVÁLIDA");
+                System.out.println("¿Está seguro que desea salir? S/N");
+                confirmar=leer.nextChar();
+                if (confirmar.equals("S")) {
+                    salir=true;                 
+                break;
+                default: System.out.println("Opción INVÁLIDA");
         }
             
         //Para validar que la opción elegida sea un número. Debe ir dentro del do después del switch 
@@ -72,7 +76,7 @@ public class NewMain {
         //sn.next es para que no se cicle si el usuario digita algo distinto a número
         sn.next();
             
-        while (opcion=5);
+    
             }
        
     
