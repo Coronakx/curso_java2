@@ -18,34 +18,22 @@ public class NewMain {
     public static void main(String[] args) {
         // TODO code application logic here
     
+     // TODO code application logic here
+     
+    double nota;
         
-
-    int nota;
-
-
     System.out.println("Ingresa una nota");
     Scanner leer=new Scanner(System.in);
-    nota=leer.nextInt();
+    nota=leer.nextDouble();
     
-        if(nota>=0&&nota<=10){
-        System.out.println("La nota es CORRECTA");
+    while(nota>10); {
+    System.out.println("La nota es INCORRECTA");
+    System.out.println("Ingresa una nota");
+    nota=leer.nextDouble();
     }
-        else {
-    System.out.println("La nota es Incorrecta");
-        }
-    while(nota<0||nota>10) {
-    System.out.println("Ingresa una calificación");
-    nota=leer.nextInt();
-        if(nota>=0&&nota<=10){
-        System.out.println("La nota es CORRECTA");
+    //if ((nota>=0)||(nota<=10);{
+       // System.out.println("La nota es CORRECTA");
+   // }   
+
     }
-        else {
-    System.out.println("La nota es Incorrecta");
-        }
-
-
-   }
-
-    }  
 }
-
