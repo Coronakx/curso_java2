@@ -26,7 +26,7 @@ public class NewMain {
     Scanner leer=new Scanner(System.in);
     nota=leer.nextDouble();
     
-    while(nota>10); {
+    while(nota>10) {
     System.out.println("La nota es INCORRECTA");
     System.out.println("Ingresa una nota");
     nota=leer.nextDouble();
