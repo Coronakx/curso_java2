@@ -27,34 +27,34 @@ public class NewMain {
 
         switch (num) {
             case 1:
-                    rom = "I";
+                    rom += "I";
                     break;
             case 2:
-                    rom = "II";
+                    rom += "II";
                     break;
             case 3:
-                    rom = "III";
+                    rom += "III";
                     break;
             case 4:
-                    rom = "IV";
+                    rom += "IV";
                     break;
             case 5:
-                    rom = "V";
+                    rom += "V";
                     break;
             case 6:
-                    rom = "VI";
+                    rom += "VI";
                     break;
             case 7:
-                    rom = "VII";
+                    rom += "VII";
                     break;
             case 8:
-                    rom = "VIII";
+                    rom += "VIII";
                     break;
             case 9:
-                    rom = "IX";
+                    rom += "IX";
                     break;
             case 10:
-                    rom = "X";
+                    rom += "X";
                     break;
         }
 
