@@ -17,14 +17,39 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    double numero, n2, n3, nr;
-        System.out.println("Ingresa un número");   
-        Scanner leer= new Scanner(System.in);
-        numero=leer.nextDouble();
-        n2=numero*2;
-        n3=numero*3;
-        nr=Math.sqrt(numero);
-        System.out.println(n2+" "+ n3+" "+ nr);
+            // Ejercicio 6 extra
+    //Calcular la estatura de n personas y de las personas debajo de 1.6 m
+
+    int numPersonas, cont, PersDebajo;   
+    double estatura, estGral; promDebajo, promGral;
+    System.out.println("¿Cuántas personas se van a promediar?");   
+    Scanner leer= new Scanner(System.in);
+    numPersonas=leer.nextDouble();
+   
+   cont=0;
+   estatura=0;
+   estGral=0;
+   persDebajo=0;
+
+    do {
+        System.out.println("Estatura: ");
+        estatura = leer.nextInt();
+        estGral=estGral+estatura;
+        contador++;
+        if (estatura<1.6) {
+            persDebajo=persDebajo+1;
+        }
+
+
+    } while contador=numPersonas;
+   
+    promDebajo=estGral/persDebajo;
+    promGral=estGral/numPersonas;
+
+    System.out.println("Personas con estatura debajo de 1.60 m: "+persDebajo);
+    System.out.println("Estatura promedio debajo de 1.60 m : "+promDebajo);
+    System.out.println("Total de personas: "+numPersonas);
+    System.out.println("Estatura promedio del total de personas: "+promGral);
         
     }
     
