@@ -16,15 +16,33 @@ public class NewMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        int num1, num2, suma;
-        System.out.println("Ingrese el primer número: ");
-        Scanner leer = new Scanner(System.in);
-        num1=leer.nextInt();
-        System.out.println("Ingrese el segundo número: ");
-        num2=leer.nextInt();
-        suma=num1+num2;
-        System.out.println("Elresultado de la suma es "+suma);
+         // TODO code application logic here
+        //Ejercicio 2 Extra
+        int aux, a, b, c, d;
+        
+        a=10;
+        b=15;
+        c=20;
+        d=30;
+        
+        
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        
+        aux=b;
+        b=c;
+        c=a;
+        a=d;
+        d=aux;
+        
+
+        
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
         
          
         
