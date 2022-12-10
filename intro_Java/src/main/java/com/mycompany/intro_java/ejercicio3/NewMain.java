@@ -23,8 +23,8 @@ public class NewMain {
         System.out.println("Ingresa una letra");
         Scanner leer=new Scanner(System.in);
         letra=leer.nextLine();
-        if (!letra.equals.IgnoreCase("A")||!letra.equals.IgnoreCase("e")||!letra.equals.IgnoreCase("I")||
-       !letra.equals.IgnoreCase("O")||!letra.equals.IgnoreCase("U")) {
+        if (!letra.equalsIgnoreCase("A")||!letra.equalsIgnoreCase("e")||!letra.equalsIgnoreCase("I")||
+       !letra.equalsIgnoreCase("O")||!letra.equalsIgnoreCase("U")) {
         System.out.println("La letra no es una vocal");
        } 
         
