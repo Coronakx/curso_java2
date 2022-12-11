@@ -21,7 +21,7 @@ public class NewMain {
     //Calcular la estatura de n personas y de las personas debajo de 1.6 m
 
     int numPersonas, cont, PersDebajo;   
-    double estatura, estGral; promDebajo, promGral;
+    double estatura, estGral,    estDebajo, promDebajo, promGral;
     System.out.println("¿Cuántas personas se van a promediar?");   
     Scanner leer= new Scanner(System.in);
     numPersonas=leer.nextDouble();
@@ -37,6 +37,7 @@ public class NewMain {
         estGral=estGral+estatura;
         contador++;
         if (estatura<1.6) {
+            estDebajo=estDebajo+estatura;
             persDebajo=persDebajo+1;
         }
 
