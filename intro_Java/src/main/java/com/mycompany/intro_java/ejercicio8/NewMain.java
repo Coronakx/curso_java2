@@ -17,17 +17,37 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        double num;
-        System.out.println("Ingrese un número");
-        Scanner leer= new Scanner(System.in);
-        num=leer.nextDouble();
-          
-        if (num%2==0){
-            System.out.println("El número es PAR");
+      //Ejercicio 8 extra
+    Scanner leer = new Scanner(System.in);
+    int lim;
+    double num;
+    int contador=0;
+    int pares=0;
+    int impares=0;
+
+    System.out.println("Ingrese la cantidad de números a capturar");
+    lim=leer.nextInt();
+    while (contador<=lim) {
+        System.out.println("Ingresa un número diferente de cero");
+        num = leer.nextInt();
+        if (num%5==0) {
+            if ((num%2==0)&&(num>0)){
+                pares++
+            }
+                else {
+                    if ((num%2!=0)&&(num>0)) {
+                    impares++
+                    }
+                }
+        contador++;
+        break;
         }
-        else {
-            System.out.println("El número es IMPAR");
-        }
+    }
+    
+    System.out.println("Cantidad de números capturados: "+contador); 
+    System.out.println("Cantidad de números pares: "+pares);
+    System.out.println("Cantidad de números impares: "+impares);  
+
         
         
         
