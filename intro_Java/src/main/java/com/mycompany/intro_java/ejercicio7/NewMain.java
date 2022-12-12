@@ -16,7 +16,7 @@ public class NewMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         // TODO code application logic here
+        // TODO code application logic here
         // Ejercicio 7 extra
         Scanner leer= new Scanner(System.in);  
        
@@ -28,21 +28,16 @@ public class NewMain {
         double suma=0;
 
         //VERSION DO-WHILE
-
+        System.out.println("Ingrese la cantidad de números a capturar");
+        lim=leer.nextInt();
+        
         do {
         System.out.println("Ingrese un número");
         num=leer.nextInt();
         minVal=num;
         suma=suma+num;
-        if (num>maxval) {
-            maxVal=num;
-            else {
-              if (num<minVal) {
-                minVal=num;
-              }
-
-            }
-        }
+        maxVal=max(maxVal,num);
+        minVal=min(minVal,num);
         contador++;
         }while contador=lim;
 
@@ -55,30 +50,24 @@ public class NewMain {
 
         //VERSION WHILE
 
+        System.out.println("Ingrese la cantidad de números a capturar");
+        lim=leer.nextInt();
+       
         while (contador<=lim) {
 
-                System.out.println("Ingrese un número");
+        System.out.println("Ingrese un número");
         num=leer.nextInt();
         minVal=num;
         suma=suma+num;
-        if (num>maxval) {
-            maxVal=num;
-            else {
-              if (num<minVal) {
-                minVal=num;
-              }
-
-            }
-        }
+        maxVal=max(maxVal,num);
+        minVal=min(minVal,num); 
         contador++;
         }
         prom=suma/num;
         System.out.orintln("El número máximo es: "+maxVal);
         System.out.println("El número mínimo es: "+minVal);
         System.out.println("El promedio es: "+prom);
-
-
-      }    
+ 
    
 }
         
