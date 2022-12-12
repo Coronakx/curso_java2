@@ -16,20 +16,26 @@ public class NewMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+  
         // TODO code application logic here
-        String frase, frase2;
-        System.out.println("Ingresa una frase");
-        Scanner leer = new Scanner (System.in);
-        frase = leer.nextLine();
-        frase2 = "Eureka";
-     //IGNORE CASE para que no distinga mayúsculas y minúsculas
-     //frase.equals sí distinguiría mayúsculas y minúsculas 
-        if(frase.equalsIgnoreCase(frase2)){
-            System.out.println("CORRECTO");
-        }
-        else {
-            System.out.println("INCORRECTO");
-        }  
+        // Ejercicio 9 extra
+
+        Scanner leer = new Scanner (System.in);     
+        int dividendo, divisor, cociente, residuo;
+        cociente=0;
+        residuo=0;
+
+        System.out.println("Ingresa el dividendo");
+        System.out.println("Ingresa el divisor");
+
+        do {
+            residuo=dividendo-divisor;
+            dividendo=residuo;
+            cociente++
+        } while (residuo>divisor)
+
+    System.out.println("Resultado="+residuo);     
+    System.out.println("Número de restas realizadas:"+cociente);
   
     
 }
