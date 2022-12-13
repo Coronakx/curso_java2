@@ -16,19 +16,14 @@ public class NewMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-                String frase;
-                int longitud;
-        System.out.println("Ingresa una frase");
-        Scanner leer = new Scanner (System.in);
-        frase = leer.nextLine();
-        longitud=frase.length();
-        System.out.println(longitud);
-        if (longitud==8){
-            System.out.println("CORRECTO");  
-        }
-        else {
-            System.out.println("INCORRECTO");
+    // TODO code application logic here
+
+    import java.util.Random; //Esto importa la clase Random de java.util
+
+    publicclassMathMatchRandom { //Esto crea una instancia de la clase Random
+        Random claseRandom = new Random();
+        claseRandom.nextInt(11); //Genera un número entre 0 y 10
+    }   
 }
         
         
