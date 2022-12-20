@@ -17,21 +17,25 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int tipo_motor;
-        System.out.println("Ingresa una opción");
+                // TODO code application logic here
+        //Ejercicio 12 extra
+        //Escalera de números
+
+        int altura, x, i;
+        System.out.println("Ingresa la altura de la escalera");
         Scanner leer = new Scanner(System.in);
-        tipo_motor = leer.nextInt();
+         altura= leer.nextInt();
         
-        switch(tipo_motor){
         
-        case (1): System.out.println("La bomba es de tipo AGUA");
-        break;
-        case (2):System.out.println("La bomba es de tipo GASOLINA");
-        break;
-        case 3: System.out.println("La bomba es de tipo HORMIGÓN");
-        break;
-        case 4: System.out.println("La bomba es de tipo PASTA ALIMENTICIA");
-        default: System.out.println("Tipo INVÁLIDO");
+        for (x=1; x<=altura; x++);{
+            for (i=1; i<=x; i++){
+            System.out.print(" "+i);
+            }
+        System.out.println("\n");
+        }
+        
+              
+        
         
               
         
@@ -42,6 +46,6 @@ public class NewMain {
     }
     }
              
-    }
+    
     
 
