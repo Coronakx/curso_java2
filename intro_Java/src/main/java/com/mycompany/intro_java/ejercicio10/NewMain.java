@@ -16,38 +16,22 @@ public class NewMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    // TODO code application logic here
-    //Ejercicio 10 extra
-        
-    /*import java.util.Random; //Esto importa la clase Random de java.util
-
-    publicclassMathMatchRandom { //Esto crea una instancia de la clase Random
-        Random claseRandom = new Random();
-        claseRandom.nextInt(11); //Genera un número entre 0 y 10
-    }   
-}    */
-        
-     
-    Scanner leer=new Scanner (System.in);  
-    int numero, aleatorio;
-    int contador=0;
-
-    aleatorio= (int) (Math.random()*100); 
-    
-    do {
-        System.out.println("Adivina el resultado de la multiplicación de dos números de 0-100");
-        numero=leer.nextInt();
-        if (aleatorio>numero) {
-            System.out.println("Digita un número mayor");
+        // TODO code application logic here
+                String frase;
+                int longitud;
+        System.out.println("Ingresa una frase");
+        Scanner leer = new Scanner (System.in);
+        frase = leer.nextLine();
+        longitud=frase.length();
+        System.out.println(longitud);
+        if (longitud==8){
+            System.out.println("CORRECTO");  
         }
         else {
-            System.out.println("Digita un número menor");
-        }
-        contador++;
-
-    }while (numero !=aleatorio);
-    System.out.println("¡¡¡¡Adivinaste el resultado!!!!!!! en " +contador+"intentos");
-          
+            System.out.println("INCORRECTO");
+}
+        
+        
         
         
         

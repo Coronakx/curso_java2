@@ -17,21 +17,19 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //Ejercicio 11 extra
-      
-        Scanner leer=new Scanner (System.in);   
-        int numero;
-        int contador=0;
-        
-        System.out.println("Ingresa un número");
+        String frase, letra;
+        System.out.println("Ingresa una frase");
         Scanner leer = new Scanner (System.in);
-        frase = leer.nextInt();
-       
-       while (numero>=1) {
-        numero=Math.trunc(numero/10);
-        contador++;
-       }
-        System.out.println("El número tiene "+contador+"cifras");
+        frase = leer.nextLine();
+        letra = "A";
+    //En Java la posición va de la posición anterior a la que se quiere igualar
+    //También se puede usar .startsWith
+        if (frase.substring(0,1).equals(letra)){
+            System.out.println("CORRECTO");
+    }
+        else {
+            System.out.println("INCORRECTO");
+        }
         
     }
     
