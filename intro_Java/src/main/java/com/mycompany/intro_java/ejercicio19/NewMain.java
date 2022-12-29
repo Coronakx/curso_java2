@@ -17,7 +17,29 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+       /* Scanner leer=new Scanner (System.in);
+        int f, i, j;
         
+        System.out.println("Ingrese la dimensión de la matriz");
+        f= leer.nextInt();
+ 
+        
+        String [][] asterisco=new String[f+1][f+1];
+        
+        for (i=0; i<=f-1; i++) {
+          for (j=0; j<=f-1; j++) {
+              if ((j==0)||(j==f-1)||(i==0)||(i==f-1)){
+               asterisco[i][j]="*";
+              }else {
+              asterisco[i][j]=" ";
+                       }
+              System.out.print(asterisco[i][j]);
+              System.out.print(" ");
+              } 
+          System.out.println(asterisco[i][j]);
+          }   */
+       
+           
         Scanner leer=new Scanner (System.in);
         int f, i, j;
         
@@ -25,7 +47,6 @@ public class NewMain {
         f= leer.nextInt();
    
         String [][] asterisco=new String[f][f];
-        
         for (i=0; i<=f-1; i++) {
           for (j=0; j<=f-1; j++) {
               if (i==0)||(j==f-1) {
@@ -47,7 +68,6 @@ public class NewMain {
                 }
               System.out.println("");
               }
-        
      
         }
         
