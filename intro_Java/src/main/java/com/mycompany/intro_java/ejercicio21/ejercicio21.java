@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author progr
  */
-public class NewMain {
+public class ejercicio21 {
 
     /**
      * @param args the command line arguments

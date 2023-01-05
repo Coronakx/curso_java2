@@ -4,6 +4,8 @@
  */
 package com.mycompany.intro_java.ejercicio22;
 
+import java.util.Scanner;
+
 /**
  *
  * @author progr
@@ -15,9 +17,9 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-                //Ejercicio 22 
+     //Ejercicio 22 
     
-        Scanner leer=new Scanner (System.in);
+     Scanner leer=new Scanner (System.in);
         int num=1;
         int[]vector = new int[100];
     
@@ -29,16 +31,16 @@ public class NewMain {
       }
     //Mostrar el arreglo de forma descendente
         for (int i=vector.length-1; i>=0; i--) {
-            System.out.print(""+vector[i]);
+            System.out.println(" "+vector[i]);
      
             }
-        }
-        
+        System.out.println(" ");
+    }
+    
         
         
         
         
     }
-   
     
 }

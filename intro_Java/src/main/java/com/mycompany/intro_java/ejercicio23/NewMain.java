@@ -4,6 +4,8 @@
  */
 package com.mycompany.intro_java.ejercicio23;
 
+import java.util.Scanner;
+
 /**
  *
  * @author progr
@@ -15,9 +17,9 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-                //Ejercicio 23 
+ //Ejercicio 23 
         Scanner leer=new Scanner (System.in);
-        int n, busca;
+       int n, busca;
 
         System.out.println("Ingrese la dimensión del vector");
         n=leer.nextInt();
@@ -26,28 +28,28 @@ public class NewMain {
         //Llenar el vector con números aleatorios
   
         for (int i=0; i<vector.length; i++) {
-            int aleatorio = (int) (Math.random()*100+1);
+            int aleatorio = (int) (Math.random()*10);
             vector[i]=aleatorio;
         }
 
         for (int i=0; i<vector.length;i++) {
             System.out.println(" "+vector[i]);
         }
-        //Buscar un número en el vector
+        
+    //Buscar un número en el vector
 
         System.out.println("Ingresa el número que quieres encontrar en el vector");
         busca=leer.nextInt();
 
         
         for (int i=0; i<vector.length;i++) {
-            if (busca=vector[i]) {
-            System.out.println("El valor  "+busca "está en la posición "+vector[i]);
+            if (busca==vector[i]) {
+            System.out.println("El valor  "+busca+ "está en la posición "+i);
             }
-            else {
-            System.out.println("El valor "+busca "No está en el vector");
-    
             }
         }
+        
+        
         
         
         
