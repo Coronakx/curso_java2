@@ -17,7 +17,7 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       /* Scanner leer=new Scanner (System.in);
+       Scanner leer=new Scanner (System.in);
         int f, i, j;
         
         System.out.println("Ingrese la dimensión de la matriz");
@@ -36,11 +36,11 @@ public class NewMain {
               System.out.print(asterisco[i][j]);
               System.out.print(" ");
               } 
-          System.out.println(asterisco[i][j]);
-          }   */
+          System.out.println(" ");
+          }   
        
            
-        Scanner leer=new Scanner (System.in);
+        /*Scanner leer=new Scanner (System.in);
         int f, i, j;
         
         System.out.println("Ingrese la dimensión de la matriz");
@@ -67,7 +67,7 @@ public class NewMain {
                   System.out.print(asterisco[i][j]+" ");
                 }
               System.out.println("");
-              }
+              }*/
      
         }
         

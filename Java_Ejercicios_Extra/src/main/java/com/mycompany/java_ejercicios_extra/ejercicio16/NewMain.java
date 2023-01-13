@@ -4,6 +4,8 @@
  */
 package com.mycompany.java_ejercicios_extra.ejercicio16;
 
+import java.util.Scanner;
+
 /**
  *
  * @author progr
@@ -15,7 +17,7 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-             // Ejercicio 16 extra
+                     // Ejercicio 16 extra
         Scanner leer=new Scanner (System.in);  
         int num;
         boolean primo=true;
@@ -23,11 +25,12 @@ public class NewMain {
     
         System.out.println("Ingresa un número");
         num=leer.nextInt();
-        numPrimo(int num);
+        numPrimo(num);
+       
 
     }
 
-    public void numPrimo(int num) {
+    public static numPrimo(int num) {
         for (int i=2; i<num && primo==true; i++) {
         if (num%i==0) {
            primo=false;
@@ -38,9 +41,7 @@ public class NewMain {
         } else {
             System.out.println("El número NO es primo");
         }
-    
+        return "";
     }
     
-}        
-        
- 
+}
