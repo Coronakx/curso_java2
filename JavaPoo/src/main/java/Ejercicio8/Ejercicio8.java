@@ -19,7 +19,9 @@ public class Ejercicio8 {
         // TODO code application logic here
         Scanner leer = new Scanner(System.in);
         leer.useDelimiter("\n");
+        
         Cadena cadena= new Cadena();
+        
         System.out.println("Ingrese una frase");
         cadena.setFrase(leer.next());
         cadena.setLongitud(cadena.frase.length());
