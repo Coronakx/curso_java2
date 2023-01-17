@@ -56,11 +56,13 @@ public class Cadena {
          leer.useDelimiter("\n");
          System.out.println("Ingrese la frase: ");
          this.frase=leer.next();
-         
-         
+             
      }
      
-   
+     public void mostrarVocales() {
+             
+          
+     }
      
     
      
