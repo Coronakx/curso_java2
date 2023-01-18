@@ -63,11 +63,16 @@ public class Cadena {
           int i;
           int contador=0;
           String letra;
-          for (i=0; i<=cadena.frase.length();i++);
-               letra.equalsIgnoreCase(this.frase.substring(i,i));
-               if (letra.equalsIgnoreCase("A")&&letra.equalsIgnoreCase("E")&&letra.equalsIgnoreCase("I")&&
-                   letra.equalsIgnoreCase("O")&&letra.equalsIgnoreCase("U") {
-               contador=contador++;
+          char c;
+          for (i=0; i<=this.frase.length();i++);
+               //letra.equalsIgnoreCase(this.frase.substring(i,i));
+               //if (letra.equalsIgnoreCase("A")||letra.equalsIgnoreCase("E")||letra.equalsIgnoreCase("I")||
+                  // letra.equalsIgnoreCase("O")||letra.equalsIgnoreCase("U") {
+          c=this.frase.charAt(i);
+          if (c.equalsIgnoreCase("a")||c.equalsIgnoreCase("e")||c.equalsIgnoreCase("i")||c.equals.IgnoreCase("o")||
+              c.equalsIgnoreCase("u") {
+          
+          contador=contador++;
                System.out.println("la frase tiene "+contador+"vocales");
                    }
              
