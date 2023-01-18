@@ -60,8 +60,16 @@ public class Cadena {
      }
      
      public void mostrarVocales() {
-          int i=;
-          for (i=1; i<=
+          int i;
+          int contador=0;
+          String letra;
+          for (i=0; i<=cadena.frase.length();i++);
+               letra.equalsIgnoreCase(this.frase.substring(i,i));
+               if (letra.equalsIgnoreCase("A")&&letra.equalsIgnoreCase("E")&&letra.equalsIgnoreCase("I")&&
+                   letra.equalsIgnoreCase("O")&&letra.equalsIgnoreCase("U") {
+               contador=contador++;
+               System.out.println("la frase tiene "+contador+"vocales");
+                   }
              
           
      }
