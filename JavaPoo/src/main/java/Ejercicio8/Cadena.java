@@ -60,6 +60,8 @@ public class Cadena {
      }
      
      public void mostrarVocales() {
+          int i=;
+          for (i=1; i<=
              
           
      }
