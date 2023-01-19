@@ -80,5 +80,8 @@ public class Cadena {
      }
      
     
-     
+     //se usa el setter del atributo de la cadena this.cadena
+     //ver el uso de fraseinvertida+frase
+              
+             
 }
