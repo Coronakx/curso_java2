@@ -124,5 +124,20 @@ public class Cadena {
           }
           System.out.println("El caracter se repite "+contador+"veces");
           
+          
+    public void comararLongitud() {
+         leer=userDelimeter("\n");
+         String frase2;
+         System.out.println("Ingrese la frase a comparar con la frase origen: ");
+         frase2=leer.next();
+         
+         if (frase2.lenght()>this.frase.lenght()) {
+              System.out.println("La nueva frase es más larga");
+         } else if (frase2.lenght()<this.frase.lenght()) {
+              System.out.println("La nueva frase es más corta");
+         } else if (frase2.lenght()==this.frase.lenght() {
+              System.out.println("Las frases miden lo mismo");
+         }
+          
 }
 }
