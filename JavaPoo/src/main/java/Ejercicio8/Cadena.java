@@ -147,11 +147,42 @@ public class Cadena {
           frase3=leer.next();
           frase4=this.frase+" "+frase3;
           System.out.println(frase4);
+       }
+                    
+                    
+   public void reemplazarA() {
+     leer=useDelimeter("\n");
+        String simbolo;
+        String frase5="";;
+        System.out.println("Elija un símbolo: ");
+        simbolo=leer.next();
+        for (i=0; i<this.frase.lenght(); i++) {
+             if (this.frase.ubstring(i,i+1).equalsIgnoreCase("a")) {
+                  frase5=frase5+simbolo;
+             } else {
+                  frase5=this.frase.substring(i,i+1);
+             }
+        }
+         System.out.println(frase5);
+   }
+        
+    public void verificar() {
+         leer.useDelimeter("\n");
+         boolean contiene=false;
+         String letra;
+         System.outprintln("Ingrese una letra: ")
+         letra=leer.next();
+         
+         if (this.frase.contains(letra)) {
+              contiene=true;
+         }
+         if (contine==true) {
+              System.out.println("La letra "+letra+" está en la frase");
+         } else {
+              System.out.println("La letra "+letra+" NO está en la frase");
+         }
+    }
                     }
-                    
-                    
-                    
-                    
 }
                     
 }
