@@ -100,7 +100,7 @@ public class Cadena {
      }
      System.out.print(fraseinvertida);
 }
- // Solución cin un arreglo
+ // Solución con un arreglo
      public void invertirCadena() {
           char[]invertir=frase.toCharArray();
           int i;
@@ -109,6 +109,20 @@ public class Cadena {
           }
           System.out.print("\n"+frase);
      }
-             
+           
+     public void contarCaracter() {
+        System.out.println("Ingresa un caracter: ");
+          leer=useDelimeter("\n");
+          String caracter;
+          caracter=leer.next();
+          int contador=0;
+          int i;
+          for(i=0; i<this.frase.lenght(); i++) {
+               if (this.frase.substring(i,i+1).equalsIgnoreCase(caracter)) {
+                    contador=contador+1;
+               }
+          }
+          System.out.println("El caracter se repite "+contador+"veces");
+          
 }
 }
