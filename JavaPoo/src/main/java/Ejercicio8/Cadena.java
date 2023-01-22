@@ -123,7 +123,7 @@ public class Cadena {
                }
           }
           System.out.println("El caracter se repite "+contador+"veces");
-          
+     }   
           
     public void comararLongitud() {
          leer=userDelimeter("\n");
@@ -138,6 +138,22 @@ public class Cadena {
          } else if (frase2.lenght()==this.frase.lenght() {
               System.out.println("Las frases miden lo mismo");
          }
-          
+      }
+           
+     public void unirFrases() {
+          String frase3, frase4;
+          leer=useDelimeter("\n");
+          System.out.println("Ingrese la frase a unir: ");
+          frase3=leer.next();
+          frase4=this.frase+" "+frase3;
+          System.out.println(frase4);
+                    }
+                    
+                    
+                    
+                    
 }
+                    
 }
+ 
+                   
