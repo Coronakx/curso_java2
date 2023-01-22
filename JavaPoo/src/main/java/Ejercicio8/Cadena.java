@@ -87,13 +87,28 @@ public class Cadena {
                contador=contador+1;
             }
           }
-          System.outprintln("La frase tiene "+contador+" vocales");            
+          System.out.println("La frase tiene "+contador+" vocales");            
      }
      
-    
+    //Método invertir frase
      
-     //ver el uso de fraseinvertida+frase
-              
+    public void invertirFrase() {
+     String fraseinvertida="";
+     int i;
+     for (i=0; i<this.frase.length();i++) {
+          fraseinvertida=this.frase.substring(1,1+1)+fraseinvertida);
+     }
+     System.out.print(fraseinvertida);
+}
+ // Solución cin un arreglo
+     public void invertirCadena() {
+          char[]invertir=frase.toCharArray();
+          int i;
+          for(i<this.frase.lenght(); i>=0;cont--) {
+               System.out.print(""+invertir[i]);
+          }
+          System.out.print("\n"+frase);
+     }
              
 }
 }
