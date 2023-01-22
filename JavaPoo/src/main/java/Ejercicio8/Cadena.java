@@ -62,26 +62,38 @@ public class Cadena {
      public void mostrarVocales() {
           int i;
           int contador=0;
-          String letra;
-          char c;
-          for (i=0; i<=this.frase.length();i++);
-               //letra.equalsIgnoreCase(this.frase.substring(i,i));
-               //if (letra.equalsIgnoreCase("A")||letra.equalsIgnoreCase("E")||letra.equalsIgnoreCase("I")||
-                  // letra.equalsIgnoreCase("O")||letra.equalsIgnoreCase("U") {
-          c=this.frase.charAt(i);
+          //String letra;
+          //char c;
+          for (i=0; i<=this.frase.length();i++) {
+               /*solución 1
+               letra.equalsIgnoreCase(this.frase.substring(i,i));
+               if (letra.equalsIgnoreCase("A")||letra.equalsIgnoreCase("E")||letra.equalsIgnoreCase("I")||
+               letra.equalsIgnoreCase("O")||letra.equalsIgnoreCase("U")   } */
+         
+               /*Solución usando charAt (después del for)
+               c=this.frase.charAt(i);
           if (c.equalsIgnoreCase("a")||c.equalsIgnoreCase("e")||c.equalsIgnoreCase("i")||c.equals.IgnoreCase("o")||
-              c.equalsIgnoreCase("u") {
+              c.equalsIgnoreCase("u") }
           
           contador=contador++;
                System.out.println("la frase tiene "+contador+"vocales");
-                   }
-             
+                   } */
           
+         //solución Jime sin usar los setters en el main (despuésd del for)
+         
+            if (this.frase.substring(i,1+1).equalsIgnoreCase("a")||this.frase.substring(i,1+1).equalsIgnoreCase("e")||
+                this.frase.substring(i,1+1).equalsIgnoreCase("i")||this.frase.substring(i,1+1).equalsIgnoreCase("o")||
+                this.frase.substring(i,1+1).equalsIgnoreCase("u")) {
+               contador=contador+1;
+            }
+          }
+          System.outprintln("La frase tiene "+contador+" vocales");            
      }
      
     
-     //se usa el setter del atributo de la cadena this.cadena
+     
      //ver el uso de fraseinvertida+frase
               
              
+}
 }
