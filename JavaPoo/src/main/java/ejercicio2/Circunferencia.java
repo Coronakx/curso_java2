@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author progr
  */
-public class Circunferencia {
+/*public class Circunferencia {
    private Integer radio;
 
     public Circunferencia(Integer radio) {
@@ -44,5 +44,40 @@ public class Circunferencia {
     public void MetPerim(){
         double perim=(2*Math.PI*this.radio);
         System.out.println("El perímetro es: "+perim);
-    }
+    }*/
+
+public class Matematica() {
+   
+   public double num1;
+   public double num2;
+   
+   public void devolverMayor() {
+   
+      double mayor;
+      mayor=Math.max(this.num1,this.num2);
+      System.out.println("El número mayor es: "+mayor);
+   }
+   
+   public void calcularPotencia() {
+    
+      long rednum1=Math.round(this.num1);
+      long rednum2=Math.round(this.num2);
+      double potencia;
+      potencia=MathPow(Math.max(rednum1,red.num2),Math.min(rednum1,rednum2);    
+      System.out.println("El número mayor elevado a la potencia del menor es: "+potencia);                 
+   }
+    
+   public void calcularRaiz() {
+      
+      int absoluto=Math.abs(Math.min(this.num1,this.num2);
+      double raizc=Math.sqrt(absoluto);
+      System.out.println("La raiz cuadrada del valor absoluto del número menor es: "+raizc);
+                               
+   }
+                            
+      
+      
+   }
+
+}
 }
