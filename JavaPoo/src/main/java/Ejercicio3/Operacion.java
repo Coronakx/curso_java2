@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author progr
  */
-public class Operacion {
+/*public class Operacion {
 
     private Integer num1;
     private Integer num2;
@@ -71,6 +71,33 @@ public class Operacion {
                System.out.println("¡Error!!!!!!!");
         } else {
         System.out.println("La división es: " + (this.num1 / this.num2)); 
-        }
+        } */
+           
+       
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class Fecha {
+    
+    LocalDate finicio = LocalDate.parse(2022-01-30);
+    LocalDate ffin = LocalDate.parse(2023-01-30);
+    
+   public void restarFechas() {
+    
+    Period pp = Period.between(finicio,ffin);
+    
+    System.out.println("Días transcurridos: "+ pp.getDays()); 
+    System.out.println("Meses transcurridos: "+ pp.getMonths());
+    System.out.println("Anios transcurridos: "+ pp.getYears());
+   
+   }
+    
+   public void restarFechaActual() {
+       
+       LocalDate factual = LocalDate.now();
+       
+       System.out.println ("Ingrese una fecha en formato dd/mm/yyyy: "); 
+   }
 }
 }
